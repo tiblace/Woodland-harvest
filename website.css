@@ -1,0 +1,410 @@
+/* colorscheme #0a5c15 #14b82a #fff9e5 #5c0a28 #eee #333*/
+/* font-family: 'Candal', sans-serif; */
+
+body {
+    background-color: #fff9e5;
+    color:  #333333;
+    font-family: 'Candal', sans-serif;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+}
+.navbar {
+    position: fixed;
+    top: 0;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows:  80% 20%;
+
+}
+
+#content {
+    width: 920px;
+    min-height: 500px;
+    padding: 0 30px;
+}
+
+#content h2 {
+    text-align: center;
+}
+
+#content ul li{
+    list-style-type: none;
+    font-size: 2em;
+}
+
+.content {
+    width: 100%;
+    min-height: 500px;
+}
+.mainBox {
+
+    background: url('graphics/woodland.jpg') no-repeat;
+    overflow: auto;
+    padding: 0;
+    margin-bottom: 25%;
+    width: 100%;
+    min-height: 500px;
+
+}
+.indexStyle {
+    display: block;
+    background-color: #687f5a;
+    text-align: center;
+    overflow: auto;
+    margin-top: 200px;
+    width: 90%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    right: 0;
+    background-color:  #687f5a;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+
+
+.sidenav a {
+    padding-bottom: 6px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    display: inline;
+    text-align: justify;
+
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav ul li {
+    list-style-type: none;
+
+}
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.aside {
+
+    overflow: auto;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    margin-top: -25px;
+    background-color: #687f5a;
+    right: 0;
+
+}
+.aside img {
+    align: center;
+    display: -webkit-inline-flex;
+
+}
+
+.aside2 ul li{
+
+    overflow: auto;
+    list-style-type: none;
+    padding: 0;
+
+}
+.aside2 {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 10%;
+    left: 0;
+    background-color:  #687f5a;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+/*video page styling */
+.video {
+    clear: both;
+    text-align: left;
+    color: black;
+    margin: 10px;
+    padding: 0;
+
+}
+
+.vidLinks a{
+    text-align: justify;
+    color: black;
+}
+
+.vidLinks a:visited {
+    color: #910E0E;
+}
+
+.vidLinks li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: .85em;
+}
+/* recipe page styling*/
+
+.recipes a {
+
+    text-align: right;
+
+}
+
+.recipes h2 {
+    text-align: center;
+}
+
+.recipes a:visited {
+    color: #910E0E;
+}
+
+.recipes li {
+    list-style-type: none;
+    margin-bottom: 15px;
+
+}
+
+.recipes  pre {
+    width: 100%;
+    display: inline-grid;
+    overflow-x: auto;
+}
+
+/* musings page styling */
+.musings {
+   width: 100%;
+    height: 100%;
+    overflow: auto;
+
+}
+.musings li a{
+    list-style-type: none;
+    text-align: center;
+    color: black;
+    display: block;
+    font-size: 1em;
+
+}
+
+.musings a:visited {
+    color: #910E0E;
+}
+
+.musings img {
+    margin: 10px;
+
+}
+/* Table styling*/
+
+table {
+    border-collapse: collapse;
+    vertical-align: top;
+}
+
+table {
+    width: 75%;
+}
+
+table tr td {
+    border: 1px solid #999999;
+}
+
+table tr th {
+    border: 1px solid #0055DD;
+    background: #0055DD;
+    color: white;
+    text-align: left;
+}
+
+/* form styling */
+
+
+
+dl {
+    clear: both;
+    overflow: hidden;
+    margin: 0.5em 0;
+}
+
+dt {
+    float: left;
+    font-weight: bold;
+    width: 125px;
+}
+
+dd {
+    float: left;
+    margin-left: 1em;
+}
+
+#operations {
+    clear: both;
+    margin: 1em 0 1em 75px;
+}
+
+/* Errors */
+
+.errors {
+    display: inline-block;
+    border: 2px solid red;
+    color: red;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.errors ul {
+    margin-bottom: 0;
+    padding-left: 1em;
+}
+
+
+footer {
+    grid-column: 1/ span 2;
+    grid-row: 2;
+    overflow: auto;
+    background-color: #f6f7f4;
+    bottom: auto;
+    text-align: center;
+
+
+}
+
+h1 {
+    display: block;
+    padding: 0;
+    color: #0a5c15;
+}
+
+.name{
+    text-align: center;
+    color: indigo;
+    margin-top: -5px;
+    padding: 0;
+
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+
+
+/* styling for mailing list form page */
+
+form input{
+    font-size: 1.2em;
+    margin: 0 auto;
+    width: 50%;
+    border: 2px solid #333;
+    border-radius: 1em;
+    padding: 1em;
+    overflow: auto;
+    background-color: #f6f7f4;
+
+}
+
+form ul li {
+    list-style-type: none;
+    clear: both;
+    padding: 10px;
+
+}
+
+
+
+
+textarea {
+
+    margin-bottom: 1em;
+    border: 1px solid #333;
+    line-height: 1.25;
+    overflow: auto;
+
+}
+
+input textarea {
+    font-family: 'Candal', sans-serif;
+    font-size: .9em;
+}
+
+
+button {
+    display: block;
+    width: 75px;
+    height: 40px;
+    text-align: center;
+    border-radius: 1em;
+    color: #7da09b;
+    margin: auto;
+    padding-top: 10px;
+
+
+}
+
+label {
+    display: block;
+    width: 10em;
+    text-align: left;
+    margin-right: .5em;
+    color: #5a5a5a;
+}
+
+input {
+    width: 75%;
+    line-height: 2em;
+    font-family: 'Candal', sans-serif;
+
+}
+
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+
+legend {
+    display: block;
+    width: 10em;
+    float: left;
+    margin-right: .5em;
+    text-align: right;
+    color: #fff9e5;
+
+}
+
+#type ul li {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+
+}
